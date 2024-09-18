@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border: 1px red solid;
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  border: 1px green solid;
+  height: 400px;
+}
+
+header img {
+  height: 100%;
+}
+
+header span {
+  color: antiquewhite;
+  font-size: 4rem;
+  transform: translate(-0.5rem, -4.5rem);
+  align-self: flex-end;
+}
+
+.profile {
+  background-color: antiquewhite;
+  padding: 64px 24px;
+}
+
+main {
+  border: 1px blue solid;
+  background-color: lightblue;
+}
+
+footer {
+  border: 1px green solid;
+  background-color: lightgreen;
+}
