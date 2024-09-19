@@ -3,14 +3,32 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: #f0f0f0;
 }
 
 header {
-  border: 1px red solid;
-  background-color: lightcoral;
+  position: relative;
+  margin: auto;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
-  padding: 5%;
+  padding: 5% 15%;
+}
+
+.background {
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(52, 107, 52) 50%,
+    transparent 50%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 h1,
@@ -18,10 +36,10 @@ p {
   margin: 0;
 }
 
-.profile-pic {
+.profile-pic,
+.footer-profile-pic {
   display: flex;
   flex-direction: column;
-  border: 1px green solid;
   height: 450px;
 }
 
@@ -30,14 +48,14 @@ header img {
 }
 
 header span {
-  color: antiquewhite;
+  color: #4e3410;
   font-size: 4rem;
   transform: translate(-0.5rem, -4.5rem);
   align-self: flex-end;
 }
 
 .profile {
-  background-color: antiquewhite;
+  background-color: #f0f0f0;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -46,33 +64,32 @@ header span {
 }
 
 .profile,
-.profile-pic {
+.profile-pic,
+.footer-profile-pic {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .icon-container {
   display: flex;
   align-self: flex-end;
-  gap: 8px;
+  gap: 16px;
 }
 
 i {
   cursor: pointer;
+  font-size: 30px;
 }
 
 main {
-  border: 1px blue solid;
-  background-color: lightblue;
   padding: 48px;
 }
 
 main > h1 {
-  padding-bottom: 48px;
+  padding-bottom: 36px;
 }
 
 .project {
-  background-color: beige;
-  border: 1px purple solid;
+  background-color: #f0f0f0;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -114,6 +131,39 @@ main > h1 {
 }
 
 footer {
-  border: 1px green solid;
-  background-color: lightgreen;
+  background-color: rgb(52, 107, 52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 128px;
+  gap: 64px;
+  color: white;
+}
+
+.footer-profile-pic {
+  transform: rotateY(180deg);
+  height: 350px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-evenly;
+  max-width: 300px;
+}
+
+.footer-section .icon-container {
+  align-self: flex-start;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact img {
+  height: 30px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
 }
