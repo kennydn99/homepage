@@ -10,7 +10,12 @@ header {
   background-color: lightcoral;
   display: flex;
   align-items: center;
-  padding: 5%;
+  padding: 5% 300px;
+}
+
+h1,
+p {
+  margin: 0;
 }
 
 .profile-pic {
@@ -33,12 +38,58 @@ header span {
 
 .profile {
   background-color: antiquewhite;
-  padding: 64px 24px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 24px;
+}
+
+.icon-container {
+  display: flex;
+  align-self: flex-end;
+  gap: 8px;
+}
+
+i {
+  cursor: pointer;
 }
 
 main {
   border: 1px blue solid;
   background-color: lightblue;
+}
+
+.project {
+  background-color: beige;
+  border: 1px purple solid;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 48px;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-link {
+  height: 30px;
+  float: right;
+}
+
+.project-description {
+  padding: 0px 16px;
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 footer {
