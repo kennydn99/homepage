@@ -4,6 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
 }
 
 a {
@@ -53,8 +55,8 @@ header img {
 }
 
 header span {
-  color: #4e3410;
-  font-size: 4rem;
+  color: #3e2400;
+  font-size: 3.8rem;
   transform: translate(-0.5rem, -4.5rem);
   align-self: flex-end;
 }
