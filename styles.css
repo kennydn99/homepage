@@ -208,3 +208,56 @@ footer {
     height: 275px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5%;
+  }
+
+  .profile-pic {
+    height: 300px;
+  }
+
+  .profile {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    margin-bottom: 20px;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    align-items: center;
+  }
+
+  .contact {
+    justify-content: space-around;
+  }
+
+  .footer-text,
+  .address,
+  main > h1 {
+    text-align: center;
+  }
+
+  header .icon-container,
+  .footer-section .icon-container {
+    align-self: center;
+  }
+
+  header span {
+    transform: translate(-0.5rem, -19.5rem);
+  }
+}
